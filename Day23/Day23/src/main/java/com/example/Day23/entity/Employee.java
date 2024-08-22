@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Entity {
+public class Employee {
 
     @Id
     @GeneratedValue
