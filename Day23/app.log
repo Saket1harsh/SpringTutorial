@@ -431,3 +431,6 @@ java.util.NoSuchElementException: No value present
 2024-08-23T16:55:43.600+05:30  WARN 21480 --- [Day23] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m46s141ms714µs400ns).
 2024-08-23T17:26:34.630+05:30  WARN 21480 --- [Day23] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m20s855ms322µs800ns).
 2024-08-23T17:36:28.746+05:30  WARN 21480 --- [Day23] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s921ms55µs300ns).
+2024-08-23T17:48:00.477+05:30  INFO 21480 --- [Day23] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-23T17:48:00.494+05:30  INFO 21480 --- [Day23] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-23T17:48:00.499+05:30  INFO 21480 --- [Day23] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
