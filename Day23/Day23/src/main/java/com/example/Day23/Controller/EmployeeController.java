@@ -2,6 +2,7 @@ package com.example.Day23.Controller;
 
 import com.example.Day23.entity.Employee;
 import com.example.Day23.service.EmployeeService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +16,7 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @PostMapping("/api/employee")
-    public Employee createEmployee(@Validated @RequestBody Employee employee){
+    public Employee createEmployee(@Valid @RequestBody Employee employee){
         return employeeService.createEmployee(employee);
     }
 
