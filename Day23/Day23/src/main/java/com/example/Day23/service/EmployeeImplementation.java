@@ -2,6 +2,7 @@ package com.example.Day23.service;
 
 import com.example.Day23.entity.Employee;
 import com.example.Day23.repository.EmployeeRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ public class EmployeeImplementation implements EmployeeService{
     private EmployeeRepository employeeRepository;
 
     @Override
+    @Transactional
     public Employee createEmployee(Employee employee) {
         return (Employee) employeeRepository.save(employee);
     }
